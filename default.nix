@@ -2,12 +2,10 @@
 
 let
   pname = "cursor";
-  version = "0.40.4";
-  appKey = "230313mzl4w4u92";
-  buildKey = "2409052yfcjagw2";
+  version = "0.45.14";
 
   src = pkgs.fetchurl {
-    url = "https://download.todesktop.com/${appKey}/cursor-${version}-build-${buildKey}-x86_64.AppImage";
+    url = "https://downloader.cursor.sh/linux/appImage/x64";
     hash = "sha256-ZURE8UoLPw+Qo1e4xuwXgc+JSwGrgb/6nfIGXMacmSg=";
   };
   appimageContents = appimageTools.extract { inherit pname version src; };
