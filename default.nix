@@ -6,7 +6,7 @@ let
 
   src = pkgs.fetchurl {
     url = "https://downloader.cursor.sh/linux/appImage/x64";
-    hash = "sha256-ZURE8UoLPw+Qo1e4xuwXgc+JSwGrgb/6nfIGXMacmSg=";
+    hash = "sha256-5MGWJi8TP+13jZf6YMMUU5uYY/3OBTFxtGpirvgj8ZI=";
   };
   appimageContents = appimageTools.extract { inherit pname version src; };
 in
